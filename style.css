@@ -1,9 +1,14 @@
-/*
 .reveal blockquote {
     font-family: 'Yellowtail';
     font-style: normal;
     font-size: 2em;
     text-align: left;
+    box-shadow: none;
+    background: transparent;
+}
+
+.reveal section img {
+    border: none;
     box-shadow: none;
     background: transparent;
 }
@@ -27,6 +32,10 @@
     text-transform: none;
 }
 
+.reveal h3 {
+    font-family: 'Yellowtail';
+}
+
 .reveal h1 small {
     font-size: 0.31em;
 }
@@ -47,21 +56,38 @@
     margin-left: 5em;
 }
 
+span.grow {
+    display: inline-block;
+}
+
 abbr:after {
     font-size: .8em;
     margin-left: .3em;
     content: "(" attr(title) ")";
 }
 
-.reveal section img {
-    border: none;
-    background-color: transparent;
+.red {
+    color: darkblue;
+}
+
+.green {
+    color: green;
+}
+
+.reveal .slides section .fragment.highlight-green.visible {
+    color: lightgreen;
+}
+.reveal .slides section .fragment.highlight-blue.visible {
+    color: lightblue;
+}
+.reveal .slides section .fragment.highlight-red.visible {
+    color: lightyellow;
 }
 
 #SH {
     position: absolute;
     left: 7.1em;
-    top: 4.3em;
+    top: 3.7em;
     transform: rotate(-15deg);
 }
 #SH img {
@@ -83,7 +109,7 @@ abbr:after {
 #Smilies {
     position: absolute;
     left: 5.9em;
-    top: 7.3em;
+    top: 6.7em;
 }
 #Smilies img {
     width: 1.5em;
@@ -101,8 +127,8 @@ abbr:after {
     border-width: 0.2em;
     border-radius: 50%;
     position: absolute;
-    left: 15.3em;
-    top: 12.7em;
+    left: 14.3em;
+    top: 11.7em;
 }
 #Sprechblase .text {
     position: relative;
@@ -141,4 +167,94 @@ abbr:after {
     top: -3.5em;
     transform: rotate(27deg);
 }
-*/
+
+#TH {
+    position: absolute;
+    left: 12.3em;
+    top: 2.1em;
+}
+#TH img {
+    width: 1em;
+    position: relative;
+    top: 0.7em;
+}
+#TH div {
+    background-color: yellow;
+    color: red;
+    font-size: 0.5em;
+    padding: 0.02em 0.2em;
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    top: -3.3em;
+    left: -0.9em;
+}
+
+table thead tr th {
+    width: 50%;
+}
+
+.reveal .slides section .fragment.visible + .fragment.gray {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fragment.gray.visible,
+.fragment.gray.visible * {
+    color: grey !important;
+}
+
+.fragment.gray + #Drucker {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.fragment.gray.visible + #Drucker {
+    opacity: 1;
+    visibility: visible;
+}
+#Drucker {
+    position: relative;
+    left: 3.5em;
+    top: 0.2em;
+}
+
+.reveal .imgs {
+    position: relative;
+    left: 1.5em;
+    top: -0.4em;
+}
+.reveal .imgs img {
+    width: 1.5em;
+    display: block;
+    float: left;
+    position: relative;
+}
+.imgs img.Berlin {
+    transform: rotate(-15deg);
+}
+.imgs img.Brandenburg {
+    transform: rotate(-7deg);
+    top: 2.3em;
+    left: .5em;
+}
+.imgs img.Nord-Rhein-Westfalen {
+    width: 1.6em;
+    left: 0.1em;
+    top: -0.2em;
+}
+.imgs img.Sachsen {
+    transform: rotate(7deg);
+    top: 2.3em;
+}
+.imgs img.Thüringen {
+    transform: rotate(15deg);
+    top: .2em;
+}
+
+img.neu {
+    position: relative;
+    width: 6em;
+    top: -5.6em;
+    left: 8.5em;
+}
