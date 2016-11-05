@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <title>Ein VERA Itemformat</title>
+
+    <meta name="description" content="Einführende Präsentation zur Diskussion über ein VERA Itemformat">
+    <meta name="author" content="Berengar W. Lehr">
+
+    <!--
+        font-family: 'Source Code Pro', monospace;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Source Serif Pro', serif;
+        font-family: 'Yellowtail', cursive;
+    -->
+
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro|Yellowtail" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-image="img/standard.jpg">
+                <section>
+                    <h1>
+                        ein VERA Itemformat
+                        <small>Orientierung im Dschungel der Begriffe<br>…und Lösungsvorschläge
+                        </small>
+                    </h1>
+                </section>
+                <section>
+                    <blockquote cite="https://en.wikiquote.org/wiki/Andrew_S._Tanenbaum#Quotes">
+                        The nice thing about standards is that you have so many to choose from.
+                        <footer>Andrew S. Tanenbaum</footer>
+                    </blockquote>
+                </section>
+            </section>
+
+            <section>
+                <p class="fragment grow">grow</p>
+                <p class="fragment shrink">shrink</p>
+                <p class="fragment fade-out">fade-out</p>
+                <p class="fragment fade-in">fade-in</p>
+                <p class="fragment fade-up">fade-up (also down, left and right!)</p>
+                <p class="fragment current-visible">visible only once</p>
+                <p class="fragment highlight-current-blue">blue only once</p>
+                <p class="fragment highlight-red">highlight-red</p>
+                <p class="fragment highlight-green">highlight-green</p>
+                <p class="fragment highlight-blue">highlight-blue</p>
+            </section>
+            <!-- <section data-transition="zoom" data-background-image="img/dschungel.jpg"> -->
+            <section>
+                <h2>dem Kind einen Namen</h2>
+                <p class="fragment">
+                    Onlinetest
+                </p>
+                <p>
+                    <abbr title="Computer Based Assessment">CBA</abbr>
+                </p>
+                <p>
+                    VERA online/digital/am PC/etc.
+                </p>
+                <p class="fragment">…Ergänzungen?</p>
+                        <!--
+                    <div class="left">
+                         id="work"
+                         <div id="SH" class="fragment">
+                            <img src="img/Schleswig-Holstein.png">
+                            <div>Besetzt!</div>
+                        </div>
+                        <div id="Smilies" class="fragment">
+                            <img src="img/Albert-Einstein-smiley.gif">
+                            <img src="img/hand-am-kinn-smiley.png">
+                        </div>
+                        <div id="Sprechblase" class="fragment">
+                            <div class="text">Eingabe? Durchführung? Auswertung?</div>
+                        </div>
+                    </div>
+                -->
+            </section>
+            <!-- </section> -->
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize();
+    </script>
+</body>
+</html>

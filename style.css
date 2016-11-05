@@ -1,0 +1,144 @@
+/*
+.reveal blockquote {
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-size: 2em;
+    text-align: left;
+    box-shadow: none;
+    background: transparent;
+}
+
+.reveal blockquote footer::before {
+    content: "— "
+}
+
+.reveal blockquote footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.4em;
+    text-align: right;
+    font-weight: bold;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.reveal h1 {
+    text-transform: none;
+}
+
+.reveal h1 small {
+    font-size: 0.31em;
+}
+
+.reveal h1 > small {
+    display: block;
+    margin-left: 2em;
+    text-align: left;
+    margin-top: 0.5em;
+}
+
+.reveal p {
+    margin: 1.3em 0;
+}
+
+.reveal .left {
+    text-align: left;
+    margin-left: 5em;
+}
+
+abbr:after {
+    font-size: .8em;
+    margin-left: .3em;
+    content: "(" attr(title) ")";
+}
+
+.reveal section img {
+    border: none;
+    background-color: transparent;
+}
+
+#SH {
+    position: absolute;
+    left: 7.1em;
+    top: 4.3em;
+    transform: rotate(-15deg);
+}
+#SH img {
+    display: block;
+    top: -0.5em;
+    width: 1.5em;
+}
+#SH div {
+    background-color: yellow;
+    color: red;
+    font-size: 0.5em;
+    padding: 0.02em 0.2em;
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    top: -3.3em;
+    left: -0.9em;
+}
+
+#Smilies {
+    position: absolute;
+    left: 5.9em;
+    top: 7.3em;
+}
+#Smilies img {
+    width: 1.5em;
+    transform: rotate(-15deg);
+}
+#Smilies img+img {
+    margin-left: 10.2em;
+    width: 1.1em;
+    transform: rotate(15deg);
+}
+
+#Sprechblase {
+    border-color: white;
+    border-style: solid;
+    border-width: 0.2em;
+    border-radius: 50%;
+    position: absolute;
+    left: 15.3em;
+    top: 12.7em;
+}
+#Sprechblase .text {
+    position: relative;
+    font-family: 'Yellowtail', cursive;
+    font-size: 1em;
+    color:  black;
+    background-color: lightgreen;
+    padding: 0.8em 0.8em 0.5em 0.4em;
+    border-radius: 50%;
+    width: 10.3em;
+    text-align: center;
+    z-index: 1;
+}
+#Sprechblase:before {
+    content: "";
+    display: block;
+    border-width: 0.8em 6em;
+    border-color: transparent lightgreen transparent transparent;
+    border-style: solid;
+    left: -10.9em;
+    top: 1em;
+    position: absolute;
+    left: -8.1em;
+    top: -2.5em;
+    transform: rotate(27deg);
+    z-index: 1;
+}
+#Sprechblase:after {
+    content: "";
+    display: block;
+    border-width: 1.5em 9.5em;
+    border-color: transparent white transparent transparent;
+    border-style: dashed;
+    position: absolute;
+    left: -12.2em;
+    top: -3.5em;
+    transform: rotate(27deg);
+}
+*/
