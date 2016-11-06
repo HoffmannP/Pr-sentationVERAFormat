@@ -56,207 +56,47 @@
     margin-left: 5em;
 }
 
-span.grow {
-    display: inline-block;
+.reveal .slides section .fragment.exit,
+.reveal .slides section .fragment.visit,
+.reveal .slides section .fragment.enter,
+  opacity: 1;
+  visibility: visible; }
+  .reveal .slides section .fragment.de-highlight-red {
+  color: #ff2c2d;
+  opacity: 1;
+  visibility: visible; }
+.reveal .slides section .fragment.de-highlight-green {
+  color: #17ff2e;
+  opacity: 1;
+  visibility: visible; }
+.reveal .slides section .fragment.de-highlight-blue {
+  color: #1b91ff;
+  opacity: 1;
+  visibility: visible; }
+.reveal .slides section .fragment.de-highlight-red.visible,
+.reveal .slides section .fragment.de-highlight-green.visible,
+.reveal .slides section .fragment.de-highlight-blue.visible {
+    color: initial;
 }
-
-abbr:after {
-    font-size: .8em;
-    margin-left: .3em;
-    content: "(" attr(title) ")";
-}
-
-.red {
-    color: darkblue;
-}
-
-.green {
-    color: green;
-}
-
-.reveal .slides section .fragment.highlight-green.visible {
-    color: green;
-}
-.reveal .slides section .fragment.highlight-blue.visible {
-    color: blue;
-}
-
-#SH {
-    position: absolute;
-    left: 7.1em;
-    top: 3.7em;
-    transform: rotate(-15deg);
-}
-#SH img {
-    display: block;
-    top: -0.5em;
-    width: 1.5em;
-}
-#SH div {
-    background-color: yellow;
-    color: red;
-    font-size: 0.5em;
-    padding: 0.02em 0.2em;
-    font-family: 'Source Code Pro', monospace;
-    position: relative;
-    top: -3.3em;
-    left: -0.9em;
-}
-
-#Smilies {
-    position: absolute;
-    left: 5.9em;
-    top: 6.7em;
-}
-#Smilies img {
-    width: 1.5em;
-    transform: rotate(-15deg);
-}
-#Smilies img+img {
-    margin-left: 10.2em;
-    width: 1.1em;
-    transform: rotate(15deg);
-}
-
-#Sprechblase {
-    border-color: white;
-    border-style: solid;
-    border-width: 0.2em;
-    border-radius: 50%;
-    position: absolute;
-    left: 14.3em;
-    top: 11.7em;
-}
-#Sprechblase .text {
-    position: relative;
-    font-family: 'Yellowtail', cursive;
-    font-size: 1em;
-    color:  black;
-    background-color: lightgreen;
-    padding: 0.8em 0.8em 0.5em 0.4em;
-    border-radius: 50%;
-    width: 10.3em;
-    text-align: center;
-    z-index: 1;
-}
-#Sprechblase:before {
-    content: "";
-    display: block;
-    border-width: 0.8em 6em;
-    border-color: transparent lightgreen transparent transparent;
-    border-style: solid;
-    left: -10.9em;
-    top: 1em;
-    position: absolute;
-    left: -8.1em;
-    top: -2.5em;
-    transform: rotate(27deg);
-    z-index: 1;
-}
-#Sprechblase:after {
-    content: "";
-    display: block;
-    border-width: 1.5em 9.5em;
-    border-color: transparent white transparent transparent;
-    border-style: dashed;
-    position: absolute;
-    left: -12.2em;
-    top: -3.5em;
-    transform: rotate(27deg);
-}
-
-#TH {
-    position: absolute;
-    left: 12.3em;
-    top: 2.1em;
-}
-#TH img {
-    width: 1em;
-    position: relative;
-    top: 0.7em;
-}
-#TH div {
-    background-color: yellow;
-    color: red;
-    font-size: 0.5em;
-    padding: 0.02em 0.2em;
-    font-family: 'Source Code Pro', monospace;
-    position: relative;
-    top: -3.3em;
-    left: -0.9em;
-}
-
-table thead tr th {
-    width: 50%;
-}
-
-.reveal .slides section .fragment.visible + .fragment.gray {
-    opacity: 1;
-    visibility: visible;
-}
-
-.fragment.gray.visible,
-.fragment.gray.visible * {
-    color: grey !important;
-}
-
-.fragment.gray + #Drucker {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-}
-.fragment.gray.visible + #Drucker {
-    opacity: 1;
-    visibility: visible;
-}
-#Drucker {
-    position: relative;
-    left: 3.5em;
-    top: 0.2em;
-}
-
-.reveal .imgs {
-    position: relative;
-    left: 1.5em;
-    top: -0.4em;
-}
-.reveal .imgs img {
-    width: 1.5em;
-    display: block;
-    float: left;
-    position: relative;
-}
-.imgs img.Berlin {
-    transform: rotate(-15deg);
-}
-.imgs img.Brandenburg {
-    transform: rotate(-7deg);
-    top: 2.3em;
-    left: .5em;
-}
-.imgs img.Nord-Rhein-Westfalen {
-    width: 1.6em;
-    left: 0.1em;
-    top: -0.2em;
-}
-.imgs img.Sachsen {
-    transform: rotate(7deg);
-    top: 2.3em;
-}
-.imgs img.Thüringen {
-    transform: rotate(15deg);
-    top: .2em;
-}
-
-img.neu {
-    position: relative;
-    width: 6em;
-    top: -5.6em;
-    left: 8.5em;
-}
+.reveal .slides section .fragment.enter {
+  display: none; }
+.reveal .slides section .fragment.enter.visible {
+  display: initial; }
+.reveal .slides section .fragment.visit {
+  display: none; }
+.reveal .slides section .fragment.visit.current-fragment {
+  display: initial; }
+.reveal .slides section .fragment.exit {
+  display: initial; }
+.reveal .slides section .fragment.exit.visible {
+  display: none; }
 
 .icons i.fa {
     font-size: 4em;
     padding: .1em;
 }
+
+.reveal .slides section .green {
+    color: #17ff2e; }
+.reveal .slides section .blue {
+    color: #1b91ff; }
