@@ -75,13 +75,10 @@ abbr:after {
 }
 
 .reveal .slides section .fragment.highlight-green.visible {
-    color: lightgreen;
+    color: green;
 }
 .reveal .slides section .fragment.highlight-blue.visible {
-    color: lightblue;
-}
-.reveal .slides section .fragment.highlight-red.visible {
-    color: lightyellow;
+    color: blue;
 }
 
 #SH {
@@ -257,4 +254,9 @@ img.neu {
     width: 6em;
     top: -5.6em;
     left: 8.5em;
+}
+
+.icons i.fa {
+    font-size: 4em;
+    padding: .1em;
 }
