@@ -80,16 +80,22 @@
     color: initial;
 }
 .reveal .slides section .fragment.enter {
+  opacity: 0;
   display: none; }
 .reveal .slides section .fragment.enter.visible {
+  opacity: 1;
   display: initial; }
 .reveal .slides section .fragment.visit {
+  opacity: 0;
   display: none; }
 .reveal .slides section .fragment.visit.current-fragment {
+  opacity: 1;
   display: initial; }
 .reveal .slides section .fragment.exit {
+  opacity: 1;
   display: initial; }
 .reveal .slides section .fragment.exit.visible {
+  opacity: 0;
   display: none; }
 
 .icons i.fa {
