@@ -34,6 +34,7 @@
 
 .reveal h3 {
     font-family: 'Yellowtail';
+    font-size: 2em;
 }
 
 .reveal h1 small {
@@ -58,7 +59,7 @@
 
 .reveal .slides section .fragment.exit,
 .reveal .slides section .fragment.visit,
-.reveal .slides section .fragment.enter,
+.reveal .slides section .fragment.enter {
   opacity: 1;
   visibility: visible; }
   .reveal .slides section .fragment.de-highlight-red {
