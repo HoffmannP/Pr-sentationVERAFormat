@@ -22,6 +22,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="plugin/highlight/monokai-sublime.css">
+
     <!-- Printing and PDF exports -->
     <script>
         var link = document.createElement( 'link' );
@@ -43,84 +46,116 @@
                 <h3>aus dem Nähkästchen</h3>
             </section>
 
-            <section data-background-image="img/sourcecode.png">
+            <section data-background-image="img/sourcecode.jpg">
                 <section>
                     <h2>
-                        <div class="eineAufgabe">eine Aufgabe:</div>
-                        <span class="fragment fa-stack">
-                            <i class="fa-stack-1x fa fa-file-o"></i>
-                            <i class="fa-stack-half fa fa-html5"></i>
+                        eine Aufgabe:
+                        <span data-fragment-index="6" class="fragment fade-out">
+                            <span data-fragment-index="1" class="fragment fa-stack">
+                                <i class="fa-stack-1x fa fa-file-o"></i>
+                                <i class="fa-stack-half fa fa-html5"></i>
+                            </span>
+                            <i data-fragment-index="2" class="grey fragment fa fa-file-text-o"></i>
+                            <i data-fragment-index="3" class="grey fragment fa fa-file-code-o"></i>
+                            <i data-fragment-index="4" class="grey fragment fa fa-file-image-o"></i>
+                            <span data-fragment-index="5" class="grey fragment fa-stack">
+                                <i class="fa-stack-1x fa fa-file-o"></i>
+                                <span class="fa-stack-half">{ }</span>
+                            </span>
                         </span>
-                        <i class="grey fragment fa fa-file-text-o"></i>
-                        <i class="grey fragment fa fa-file-code-o"></i>
-                        <i class="grey fragment fa fa-file-image-o"></i>
+                        <span data-fragment-index="6" class="fragment fade-in">
+                            <i class="fa fa-file-archive-o"></i>
+                        </span>
                     </h2>
                 </section>
+
                 <section>
-                    <h2>
-                        <div class="eineAufgabe">eine Aufgabe:</div>
-                        <span class="fa-stack">
-                            <i class="fa-stack-1x fa fa-file-o"></i>
-                            <i class="fa-stack-half fa fa-html5"></i>
-                        </span>
-                        <i class="fa fa-file-text-o"></i>
-                        <i class="grey fa fa-file-code-o"></i>
-                        <i class="grey fa fa-file-image-o"></i>
-                    </h2>
-                    <h2 class="fragment stacking light">
-                        <div class="eineAufgabe">zweite Aufgabe:</div>
-                        <span class="fa-stack">
-                            <i class="fa-stack-1x fa fa-file-o"></i>
-                            <i class="fa-stack-half fa fa-html5"></i>
-                        </span>
-                        <i class="fa fa-file-text-o"></i>
-                        <i class="grey fa fa-file-code-o"></i>
-                        <i class="grey fa fa-file-image-o"></i>
-                    </h2>
-                    <h2 class="fragment stacking lighter">
-                        <div class="eineAufgabe">dritte Aufgabe:</div>
-                        <span class="fa-stack">
-                            <i class="fa-stack-1x fa fa-file-o"></i>
-                            <i class="fa-stack-half fa fa-html5"></i>
-                        </span>
-                        <i class="fa fa-file-text-o"></i>
-                        <i class="grey fa fa-file-code-o"></i>
-                        <i class="grey fa fa-file-image-o"></i>
-                    </h2>
-                    <h2 class="fragment stacking lightest">
-                        <div class="eineAufgabe">weiter Aufgabe:</div>
-                        <span class="fa-stack">
-                            <i class="fa-stack-1x fa fa-file-o"></i>
-                            <i class="fa-stack-half fa fa-html5"></i>
-                        </span>
-                        <i class="fa fa-file-text-o"></i>
-                        <i class="grey fa fa-file-code-o"></i>
-                        <i class="grey fa fa-file-image-o"></i>
-                    </h2>
-                    <h2 class="fragment stacking mostLight">
-                        <div class="eineAufgabe">noch eine:</div>
-                        <span class="fa-stack">
-                            <i class="fa-stack-1x fa fa-file-o"></i>
-                            <i class="fa-stack-half fa fa-html5"></i>
-                        </span>
-                        <i class="fa fa-file-text-o"></i>
-                        <i class="grey fa fa-file-code-o"></i>
-                        <i class="grey fa fa-file-image-o"></i>
-                    </h2>
-                    <h2 class="fragment">
-                        <div class="eineAufgabe">global:</div>
-                        <i class="transparent fa fa-file-text-o"></i>
-                        <i class="fragment fa fa-file-text-o"></i>
-                        <i class="fragment fa fa-file-code-o"></i>
-                        <i class="transparent fa fa-file-image-o"></i>
-                    </h2>
+                    <h2>Struktur eines Items</h2>
+<pre><code class="html"><div class="kopf">
+    <h2 class="nr">Titel der Aufgabe</h2>
+    Stimulus
+</div>
+<div class="inhalt">
+    <div class="abschnitt">
+        <h3 class="nr_pkt">1</h3>
+        Unteraufgabe
+    </div>
+    weitere Unteraufgaben
+</div></code></pre>
                 </section>
+
+                <section>
+                    <h2>Kopfteil</h2>
+<pre><code class="html"><div class="lesetext">
+    <h5>Die Augen des Pfaus</h5>
+
+    <p class="zeilnum">
+        Wenn jemand etwas mit <b>Argusaugen</b> beobachtet, tut er …
+        stammt aus der griechischen Mythologie.<br class="absatz">
+        …
+        es zu einem Schäferstündchen<sup>1</sup> zwischen Zeus …
+    </p>
+
+    <p class="quelle">
+        Text: © Duden Kalender - Auf gut Deutsch! 2014: Recht…
+    </p>
+    <p class="fussnote">
+        <sup>1</sup><i>Schäferstündchen, das:</i> heimliches…
+    </p>
+</div></code></pre>
+                </section>
+
+                <section id="work">
+                    <h2>Unteraufgabe</h2>
+<pre><code class="html"><div class="abschnitt">
+   <h3 class="nr_pkt">2</h3>
+   <p class="itemZeilenweise">Wer wurde in eine Kuh verwandelt?
+      <label><input type="radio" name="iA018024" value="1">Hera</label>
+      <label><input type="radio" name="iA018024" value="2">Argus</label>
+      <label><input type="radio" name="iA018024" value="3">Zeus</label>
+      <label><input type="radio" name="iA018024" value="4">Io</label>
+   </p>
+</div></code></pre>
+                </section>
+
+
+<div class="abschnitt">
+        <ol>
+            <li>
+                <p>Wir müssen
+                    <label class="falschDurchstreichen">
+                        <input name="iG659013_a" type="radio" value="1"><span>einkaufen gehen</span>
+                    </label> /
+                    <label class="falschDurchstreichen">
+                        <input name="iG659013_a" type="radio" value="2"><span>einkaufengehen</span>
+                    </label>.
+                </p>
+                <p>Anne möchte gerne
+                    <label class="falschDurchstreichen">
+                        <input name="iG659013_b" type="radio" value="1"><span>Klavier spielen</span>
+                    </label> /
+                    <label class="falschDurchstreichen">
+                        <input name="iG659013_b" type="radio" value="2"><span>klavierspielen</span>
+                    </label>.
+                </p>
+            </li>
+
+
+
+
             </section>
         </div>
     </div>
+    <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
     <script>
-        Reveal.initialize();
+        Reveal.initialize({
+            dependencies: [
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true }
+            ]
+        });
     </script>
 </body>
 </html>

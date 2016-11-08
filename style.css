@@ -14,7 +14,7 @@
 }
 
 .reveal blockquote footer::before {
-    content: "Ã¢â‚¬â€ "
+    content: "—"
 }
 
 .reveal blockquote footer {
@@ -109,6 +109,10 @@
   left: 0;
   width: 100%;
   text-align: center; }
+.reveal span.fa-stack-half {
+  font-size: .5em;
+  font-weight: bold;
+  margin-top: -0.1em; }
 span.fa-stack {
   width: 0.9em;
   vertical-align: top; }
@@ -133,9 +137,8 @@ span.fa-stack {
   opacity: .2; }
 .reveal .slides section .stacking {
   margin-top: -1em; }
-.reveal .slides section .eineAufgabe {
-  display: inline-block;
-  width: 7em;
-  text-align: left;
-}
-
+.reveal code span.text {
+  font-family: 'Yellowtail';
+  font-size: 1.2em;
+  margin-right: .2em;
+  color: darkblue; }
