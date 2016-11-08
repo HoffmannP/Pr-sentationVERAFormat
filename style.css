@@ -99,16 +99,43 @@
   display: none; }
 
 .icons i.fa {
-    font-size: 4em;
-    padding: .1em;
-}
+  font-size: 4em;
+  padding: .1em; }
+
+.fa-stack-half {
+  font-size: .5em;
+  position: absolute;
+  top: .9em;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+span.fa-stack {
+  width: 0.9em;
+  vertical-align: top; }
 
 .reveal .slides section .red {
-    color: #ff2c2d; }
+  color: #ff2c2d; }
 .reveal .slides section .green {
-    color: #17ff2e; }
+  color: #17ff2e; }
 .reveal .slides section .blue {
-    color: #1b91ff; }
+  color: #1b91ff; }
 .reveal .slides section .transparent {
-    color: transparent; }
+  color: transparent; }
+.reveal .slides section .grey {
+  color: #888; }
+.reveal .slides section .fragment.visible.light {
+  opacity: .8; }
+.reveal .slides section .fragment.visible.lighter {
+  opacity: .6; }
+.reveal .slides section .fragment.visible.lightest {
+  opacity: .4; }
+.reveal .slides section .fragment.visible.mostLight {
+  opacity: .2; }
+.reveal .slides section .stacking {
+  margin-top: -1em; }
+.reveal .slides section .eineAufgabe {
+  display: inline-block;
+  width: 7em;
+  text-align: left;
+}
 
