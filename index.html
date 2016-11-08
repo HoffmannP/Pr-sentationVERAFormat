@@ -189,36 +189,107 @@
                         </div>
                     </div>
                     <p data-fragment-index="1" class="fragment visit">Erstellung</p>
-                    <p data-fragment-index="2" class="fragment visit">Präsentation</p>
+                    <p data-fragment-index="2" class="fragment visit">Interaktion</p>
                     <p data-fragment-index="3" class="fragment visit">Korrektur</p>
                 </section>
 
-                <section id="work">
+                <section>
                     <h3>Korrektur</h3>
+                    <div class="fragment icons"><i class="fa fa-cogs"></i></div>
+                </section>
+                <section>
+                    <h3>Korrektur</h3>
+                    <div class="icons">
+                        <i data-fragment-index="1" class="fragment highlight-current-red fa fa-hand-paper-o"></i>
+                    </div>
+                    <i data-fragment-index="1" class="fragment red visit fa fa-question"></i>
+                    <div data-fragment-index="8" class="fragment exit">
+                        <div data-fragment-index="2" class="fragment enter">
+                            <i data-fragment-index="2" class="fragment enter fa fa-cog"></i>
+                            <i data-fragment-index="3" class="fragment visit green fa fa-arrow-right"></i>
+                            <i data-fragment-index="3" class="fragment enter fa fa-database"></i>
+                            <i data-fragment-index="4" class="fragment visit green fa fa-arrow-up"></i>
+                            <i data-fragment-index="4" class="fragment enter transparent fa fa-hand-paper-o"></i>
+                            <i data-fragment-index="5" class="fragment visit green fa fa-arrow-down"></i>
+                            <i data-fragment-index="5" class="fragment enter fa fa-database"></i>
+                            <i data-fragment-index="6" class="fragment visit green fa fa-arrow-right"></i>
+                            <i data-fragment-index="6" class="fragment visit fa fa-cog"></i>
+                            <i data-fragment-index="7" class="fragment enter fa fa-cog"></i>
+                        </div>
+                    </div>
+                    <i data-fragment-index="8" class="fragment enter red fa fa-database"></i>
+                </section>
+
+                <section>
+                    <h3>Interaktion</h3>
                     <div data-fragment-index="1" class="fragment exit">
-                        <div class="icons fragment"><i class="fa fa-cogs"></i></div>
+                        <div class="icons"><i class="fa fa-gamepad"></i></div>
                     </div>
-                    <div data-fragment-index="5" class="fragment exit">
+                    <div data-fragment-index="3" class="fragment exit">
                         <div data-fragment-index="1" class="fragment enter">
-                            <div class="icons"><i class="fa fa-cogs"></i></div>
-                            <p data-fragment-index="2" class="fragment visit">Tao</p>
-                            <p data-fragment-index="3" class="fragment visit">Itembuilder</p>
-                            <p data-fragment-index="4" class="fragment visit">Sprach-Interpreter</p>
+                            <div class="icons">
+                                <i class="fa fa-desktop"></i>
+                                <i class="fa fa-laptop"></i>
+                                <i class="fa fa-tablet"></i>
+                                <i class="fa fa-mobile"></i>
+                                <i data-fragment-index="2" class="fragment enter fa fa-rocket"></i>
+                            </div>
+                            <p>Zielmedium</p>
                         </div>
                     </div>
-                    <div data-fragment-index="5" class="fragment enter">
+                    <div data-fragment-index="3" class="fragment visit">
                         <div class="icons">
-                            <i data-fragment-index="6" class="fragment highlight-red fa fa-hand-paper-o"></i>
+                            <i class="fa fa-volume-up"></i>
                         </div>
-                        <p data-fragment-index="6" class="fragment red">?</p>
+                        <p>Audio</p>
+                    </div>
+                    <div data-fragemnt-index="4" class="fragment enter">
+                        <div class="icons">
+                            <i class="fa fa-object-group"></i>
+                        </div>
+                        <p>Zeichnen</p>
                     </div>
                 </section>
+
+                <section>
+                    <h3>Erstellung</h3>
+                    <div class="icons">
+                        <i data-fragment-index="1" class="fragment fa fa-sliders"></i>
+                        <i data-fragment-index="2" class="fragment fa fa-cubes"></i>
+                        <i data-fragment-index="3" class="fragment fa fa-code"></i>
+                    </div>
+                    <p data-fragment-index="1" class="fragment visit">Parameter</p>
+                    <p data-fragment-index="2" class="fragment visit">Bausteine</p>
+                    <p data-fragment-index="3" class="fragment visit">Code</p>
+                </section>
             </section>
+
+            <section data-background-image="img/kiss.jpg" id="work">
+                <div class="icons" style="color: #aaa">
+                    <div data-fragment-index="3" class="fragment exit">
+                        <div data-fragment-index="1" class="fragment">
+                            <span class="small">
+                                no <img src="img/PowerPoint.svg" style="width: 1em; position: relative; top: 0.2em; margin: 0 0.1em;">
+                                was harmed in this presentation
+                            </span>
+                        </div>
+                        <div data-fragment-index="2" class="fragment">
+                            <span class="small">proudly made with:</span>
+                            <i style="font-size: 1em;" class="fa fa-font-awesome"></i>
+                            <img src="img/HTML.svg" style="height: 1em; position: relative; top: 0.5em;">
+                            <img src="img/CSS.svg" style="height: 1em; position: relative; top: 0.5em;">
+                            <img src="img/JS.svg" style="height: 1em; position: relative; top: 0.5em;">
+                        </div>
+                    </div>
+                    <h3 data-fragment-index="3" class="fragment enter" style="color: #aaa">
+                        Danke für die Aufmerksamkeit
+                    </h3>
+                </section>
+            </div>
         </div>
-    </div>
-    <script src="js/reveal.js"></script>
-    <script>
-        Reveal.initialize();
-    </script>
-</body>
-</html>
+        <script src="js/reveal.js"></script>
+        <script>
+            Reveal.initialize();
+        </script>
+    </body>
+    </html>
