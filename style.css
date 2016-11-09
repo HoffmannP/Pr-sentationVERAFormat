@@ -14,7 +14,8 @@
 }
 
 .reveal blockquote footer::before {
-    content: "—"
+    content: "—";
+    margin-right: 0.3em;
 }
 
 .reveal blockquote footer {
