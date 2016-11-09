@@ -9,13 +9,6 @@
     <meta name="description" content="Umsetzung DK8 2016">
     <meta name="author" content="Berengar W. Lehr">
 
-    <!--
-        font-family: 'Source Code Pro', monospace;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-family: 'Source Serif Pro', serif;
-        font-family: 'Yellowtail', cursive;
-    -->
-
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/simple.css" id="theme">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro|Yellowtail" rel="stylesheet">
@@ -68,81 +61,269 @@
                         </span>
                     </h2>
                 </section>
+            </section>
 
+            <section data-background-image="img/sourcecode.jpg">
                 <section>
                     <h2>Struktur eines Items</h2>
-<pre><code class="html"><div class="kopf">
-    <h2 class="nr">Titel der Aufgabe</h2>
-    Stimulus
+                    <pre><code class="html" data-trim="true">
+<div class="kopf">
+  <h2 class="nr">Titel der Aufgabe</h2>
+  Stimulus
 </div>
 <div class="inhalt">
-    <div class="abschnitt">
-        <h3 class="nr_pkt">1</h3>
-        Unteraufgabe
-    </div>
-    weitere Unteraufgaben
-</div></code></pre>
+  <div class="abschnitt">
+      <h3 class="nr_pkt">1</h3>
+      Unteraufgabe
+  </div>
+  weitere Unteraufgaben
+</div>
+                    </code></pre>
                 </section>
 
                 <section>
                     <h2>Kopfteil</h2>
-<pre><code class="html"><div class="lesetext">
-    <h5>Die Augen des Pfaus</h5>
+                    <pre><code class="html" data-trim="true">
+<div class="lesetext">
+  <h5>Die Augen des Pfaus</h5>
 
-    <p class="zeilnum">
-        Wenn jemand etwas mit <b>Argusaugen</b> beobachtet, tut er …
-        stammt aus der griechischen Mythologie.<br class="absatz">
-        …
-        es zu einem Schäferstündchen<sup>1</sup> zwischen Zeus …
-    </p>
+  <p class="zeilnum">
+      Wenn jemand etwas mit <b>Argusaugen</b> beobachtet, tut er …
+      stammt aus der griechischen Mythologie.<br class="absatz">
+      …
+      es zu einem Schäferstündchen<sup>1</sup> zwischen Zeus …
+  </p>
 
-    <p class="quelle">
-        Text: © Duden Kalender - Auf gut Deutsch! 2014: Recht…
-    </p>
-    <p class="fussnote">
-        <sup>1</sup><i>Schäferstündchen, das:</i> heimliches…
-    </p>
-</div></code></pre>
+  <p class="quelle">
+      Text: © Duden Kalender - Auf gut Deutsch! 2014: Recht…
+  </p>
+  <p class="fussnote">
+      <sup>1</sup><i>Schäferstündchen, das:</i> heimliches…
+  </p>
+</div>
+                    </code></pre>
                 </section>
 
-                <section id="work">
-                    <h2>Unteraufgabe</h2>
-<pre><code class="html"><div class="abschnitt">
-   <h3 class="nr_pkt">2</h3>
-   <p class="itemZeilenweise">Wer wurde in eine Kuh verwandelt?
-      <label><input type="radio" name="iA018024" value="1">Hera</label>
-      <label><input type="radio" name="iA018024" value="2">Argus</label>
-      <label><input type="radio" name="iA018024" value="3">Zeus</label>
-      <label><input type="radio" name="iA018024" value="4">Io</label>
-   </p>
-</div></code></pre>
-                </section>
-
-
+                <section>
+                    <h2>Aufgabenteil</h2>
+                    <pre><code class="html" data-trim="true">
 <div class="abschnitt">
-        <ol>
-            <li>
-                <p>Wir müssen
-                    <label class="falschDurchstreichen">
-                        <input name="iG659013_a" type="radio" value="1"><span>einkaufen gehen</span>
-                    </label> /
-                    <label class="falschDurchstreichen">
-                        <input name="iG659013_a" type="radio" value="2"><span>einkaufengehen</span>
-                    </label>.
-                </p>
-                <p>Anne möchte gerne
-                    <label class="falschDurchstreichen">
-                        <input name="iG659013_b" type="radio" value="1"><span>Klavier spielen</span>
-                    </label> /
-                    <label class="falschDurchstreichen">
-                        <input name="iG659013_b" type="radio" value="2"><span>klavierspielen</span>
-                    </label>.
-                </p>
-            </li>
+  <h3 class="nr_pkt">2</h3>
+  <p class="itemZeilenweise">Wer wurde in eine Kuh verwandelt?
+    <label><input type="radio" name="iA018024" value="1">Hera</label>
+    <label><input type="radio" name="iA018024" value="2">Argus</label>
+    <label><input type="radio" name="iA018024" value="3">Zeus</label>
+    <label><input type="radio" name="iA018024" value="4">Io</label>
+  </p>
+</div>
+                    </code></pre>
+                </section>
 
+                <section>
+                    <h2>Fertiges Item</h2>
+                    <img src="img/Aufgab 11.png">
+                </section>
+            </section>
 
+            <section data-background-image="img/sourcecode.jpg">
+                <section>
+                    <h2>Multiple Choice</h2>
+                    <pre><code class="html" data-trim="true">
+<div class="abschnitt">
+  <h3 class="nr_pkt">1</h3>
+  <p>Wir müssen
+    <label>
+        <input type="radio" name="iG659013_a" value="1">
+        einkaufen gehen
+    </label> /
+    <label>
+        <input type="radio" name="iG659013_a" value="2">
+        einkaufengehen
+    </label>.
+  </p>
+</div>
+                    </code></pre>
+                </section>
 
+                <section>
+                    <h2>vorläufige Version</h2>
+                    <img src="img/Aufgabe 1-ktO.png">
+                </section>
 
+                <section>
+                    <h2>So soll's aussehen</h2>
+                    <img src="img/Aufgabe 1-iqb.png">
+                </section>
+
+                <section>
+                    <h2>Multiple Choice - zum Durchstreichen!</h2>
+                    <pre><code class="html" data-trim="true">
+<div class="abschnitt">
+  <h3 class="nr_pkt">1</h3>
+  <p>Wir müssen
+    <label class="falschDurchstreichen">
+        <input type="radio" name="iG659013_a" value="1">
+        <span>einkaufen gehen</span>
+    </label> /
+    <label class="falschDurchstreichen">
+        <input type="radio" name="iG659013_a" value="2">
+        <span>einkaufengehen</span>
+    </label>.
+  </p>
+</div>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Fertiges Item</h2>
+                    <img src="img/Aufgabe 1-kt.png">
+                </section>
+
+                <section>
+                    <h2>zusammengeklickt in TAO</h2>
+                    <img src="img/Aufgabe 1-tao.png">
+                </section>
+            </section>
+
+            <section data-background-image="img/sourcecode.jpg">
+                <section>
+                    <h2>Entwicklung einer Aufgabe</h2>
+                </section>
+
+                <section>
+                    <h2>1. Versuch - Textfeld</h2>
+                    <img src="img/Aufgabe 2-tf.png">
+                </section>
+
+                <section>
+                    <h2>2. Versuch - Dropdown</h2>
+                    <img src="img/Aufgabe 2-dd.png">
+                </section>
+
+                <section>
+                    <h2>3. Versuch - Checkbox</h2>
+                    <img src="img/Aufgabe 2-cb.png">
+                </section>
+
+                <section>
+                    <h2>Finale Version</h2>
+                    <img src="img/Aufgabe 2-kt.png">
+                </section>
+            </section>
+
+            <section data-background-image="img/sourcecode.jpg">
+                <section>
+                    <h2>Eine komplexe Korrektur</h2>
+                </section>
+
+                <section>
+                    <h2>Aufgabe</h2>
+                    <img src="img/Aufgab 10.png">
+                </section>
+
+                <section>
+                    <h2>Rohdaten</h2>
+                    <table id="Aufgabe10">
+                        <thead>
+                            <tr><th rowspan="2">SchID</th><th colspan="8">iA015034_…</th></tr>
+                            <tr><th>…a</th><th>…b</th><th>…c</th><th>…d</th><th>…e</th><th>…f</th><th>…g</th><th>…h</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>7650</td><td>44,11</td><td>40,11</td><td>12,88</td><td>2,11</td><td>Bundesbürger interessieren sich sehr</td><td>Bundesbürger interessieren sich weniger</td><td>Menschen interessieren sich weniger</td><td>Menschen interessieren sich überhaupt nicht</td></tr>
+                            <tr><td>6734</td><td>12,49</td><td>43,57</td><td>40,18</td><td>1,57</td><td>der Menschen weniger</td><td>4 von 5 Bundesbürgern sehr</td><td>4 von 5 Bundesbürgern etwas</td><td>der Menschen überhauptnicht</td></tr>
+                            <tr><td>7378</td><td>43,96</td><td>39,80</td><td>12,11</td><td>1,19</td><td>Interesse sehr</td><td>Interesse etwas</td><td>Interesse wenig</td><td>Kein Interesse</td></tr>
+                            <tr><td>3066</td><td>44,03</td><td>40,18</td><td>13,72</td><td>2,18</td><td>etwas</td><td>sehr</td><td>weniger</td><td>überhaupt nicht</td></tr>
+                            <tr><td>7106</td><td>13,48</td><td>1,32</td><td>44,49</td><td>39,94</td><td>weniger</td><td>überhaupt nicht </td><td>4 von 5 Bundesbürge sehr</td><td>4 von 5 Bürgern etwas</td></tr>
+                            <tr><td>5786</td><td>1,26</td><td>12,95</td><td>40,18</td><td>43,72</td><td>überhaupt nicht</td><td>weniger</td><td>etwas</td><td>sehr</td></tr>
+                            <tr><td>3838</td><td>11,54</td><td>1,23</td><td>44,15</td><td>39,85</td><td>wenig</td><td>überhaupt nicht</td><td>sehr</td><td>etwas</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>
+                        <span data-fragment-index="1" class="fragment exit">Sortieren <i class="fa fa-sort-numeric-asc"></i></span>
+                        <span data-fragment-index="1" class="fragment enter">Korrigieren <i class="fa fa-cog"></i></span>
+                    </h2>
+                    <table id="Aufgabe10">
+                        <thead>
+                            <tr><th rowspan="2">SchID</th><th colspan="2">2% Balken</th><th colspan="2">13% Balken</th><th colspan="2">40% Balken</th><th colspan="2">44% Balken</th></tr>
+                            <tr><th>Wert</th><th>Bez.</th><th>Wert</th><th>Bez.</th><th>Wert</th><th>Bez.</th><th>Wert</th><th>Bez.</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>7650</td><td>2,11</td><td>Menschen interessieren sich überhaupt nicht</td><td>12,88</td><td>Menschen interessieren sich weniger</td><td>40,11</td><td>Bundesbürger interessieren sich weniger</td><td>44,11</td><td>Bundesbürger interessieren sich sehr</td></tr>
+                            <tr><td>6734</td><td>1,57</td><td>der Menschen überhauptnicht</td><td>12,49</td><td>der Menschen weniger</td><td>40,18</td><td>4 von 5 Bundesbürgern etwas</td><td>43,57</td><td>4 von 5 Bundesbürgern sehr</td></tr>
+                            <tr><td>7378</td><td>1,19</td><td>Kein Interesse</td><td>12,11</td><td>Interesse wenig</td><td>39,8</td><td>Interesse etwas</td><td>43,96</td><td>Interesse sehr</td></tr>
+                            <tr data-fragment-index="2" class="fragment highlight-red"><td>3066</td><td>2,18</td><td>überhaupt nicht</td><td>13,72</td><td>weniger</td><td>40,18</td><td>sehr</td><td data-fragment-index="1" class="fragment highlight-red">48,03</td><td>etwas</td></tr>
+                            <tr><td>7106</td><td>1,32</td><td>überhaupt nicht</td><td>13,48</td><td>weniger</td><td>39,94</td><td>4 von 5 Bürgern etwas</td><td>44,49</td><td>4 von 5 Bundesbürge sehr</td></tr>
+                            <tr><td>5786</td><td>1,26</td><td>überhaupt nicht</td><td>12,95</td><td>weniger</td><td>40,18</td><td>etwas</td><td>43,72</td><td>sehr</td></tr>
+                            <tr data-fragment-index="2" class="fragment highlight-red"><td>3838</td><td>1,23</td><td>überhaupt nicht</td><td data-fragment-index="1" class="fragment highlight-red">10,54</td><td>wenig</td><td>39,85</td><td>etwas</td><td>44,15</td><td>sehr</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Korrektur
+                        <i data-fragment-index="3" class="fragment exit fa fa-cogs"></i>
+                        <i data-fragment-index="3" class="fragment enter fa fa-hand-paper-o"></i>
+                    </h2>
+                    <table id="Aufgabe10">
+                        <thead>
+                            <tr><th>SchID</th><th>„überhaupt nicht”</th><th>„weniger”</th><th>„etwas”</th><th>„sehr”</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7650</td>
+                                <td>Menschen interessieren sich überhaupt nicht</td>
+                                <td>Menschen interessieren sich weniger</td>
+                                <td>Bundesbürger interessieren sich weniger</td>
+                                <td>Bundesbürger interessieren sich sehr</td>
+                            </tr>
+                            <tr>
+                                <td>6734</td>
+                                <td>der Menschen überhauptnicht</td>
+                                <td>der Menschen weniger</td>
+                                <td>4 von 5 Bundesbürgern etwas</td>
+                                <td>4 von 5 Bundesbürgern sehr</td>
+                            </tr>
+                            <tr>
+                                <td>7378</td>
+                                <td>Kein Interesse</td>
+                                <td>Interesse wenig</td>
+                                <td>Interesse etwas</td>
+                                <td>Interesse sehr</td>
+                            </tr>
+                            <tr>
+                                <td>3066</td>
+                                <td><i data-fragment-index="1" class="fragment enter fa fa-check"></i><span data-fragment-index="1" class="fragment exit">überhaupt nicht</span></td>
+                                <td><i data-fragment-index="1" class="fragment enter fa fa-check"></i><span data-fragment-index="1" class="fragment exit">weniger</span></td>
+                                <td>sehr</td>
+                                <td>etwas</td>
+                            </tr>
+                            <tr>
+                                <td>7106</td>
+                                <td><i data-fragment-index="1" class="fragment enter fa fa-check"></i><span data-fragment-index="1" class="fragment exit">überhaupt nicht</span></td>
+                                <td><i data-fragment-index="1" class="fragment enter fa fa-check"></i><span data-fragment-index="1" class="fragment exit">weniger</span></td>
+                                <td><i data-fragment-index="2" class="fragment enter fa fa-link"></i><span data-fragment-index="1" class="fragment exit">4 von 5 Bürgern etwas</span></td>
+                                <td><i data-fragment-index="2" class="fragment enter fa fa-link"></i><span data-fragment-index="1" class="fragment exit">4 von 5 Bundesbürge sehr</span></td>
+                            </tr>
+                            <tr>
+                                <td>5786</td>
+                                <td><i data-fragment-index="1" class="fragment enter fa fa-check"></i><span data-fragment-index="1" class="fragment exit">überhaupt nicht</span></td>
+                                <td><i data-fragment-index="1" class="fragment enter fa fa-check"></i><span data-fragment-index="1" class="fragment exit">weniger</span></td>
+                                <td><i data-fragment-index="1" class="fragment enter fa fa-check"></i><span data-fragment-index="1" class="fragment exit">etwas</span></td>
+                                <td><i data-fragment-index="1" class="fragment enter fa fa-check"></i><span data-fragment-index="1" class="fragment exit">sehr</span></td>
+                            </tr>
+                            <tr>
+                                <td>3838</td>
+                                <td><i data-fragment-index="1" class="fragment enter fa fa-check"></i><span data-fragment-index="1" class="fragment exit">überhaupt nicht</span></td>
+                                <td>wenig</td>
+                                <td><i data-fragment-index="1" class="fragment enter fa fa-check"></i><span data-fragment-index="1" class="fragment exit">etwas</span></td>
+                                <td><i data-fragment-index="1" class="fragment enter fa fa-check"></i><span data-fragment-index="1" class="fragment exit">sehr</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </section>
         </div>
     </div>

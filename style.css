@@ -142,3 +142,20 @@ span.fa-stack {
   font-size: 1.2em;
   margin-right: .2em;
   color: darkblue; }
+
+.reveal .slides section table#Aufgabe10 {
+  font-size: 0.5em; }
+.reveal .slides section table#Aufgabe10 thead {
+  text-align: center;
+  border-bottom: 2px solid black; }
+.reveal .slides section table#Aufgabe10 th {
+  text-align: center;
+  border-bottom: none; }
+.reveal .slides section table#Aufgabe10 td {
+  border-bottom: none; }
+.reveal .slides section table#Aufgabe10 tbody tr:nth-child(odd) {
+  background-color: #888; }
+.reveal .slides section table tr.fragment,
+.reveal .slides section table tr.fragment.exit {
+  display: table-row;
+}
