@@ -3,6 +3,9 @@
 .reveal h2,
 .reveal h3 {
   text-shadow: 1px 1px 0 white; }
+.reveal pre code  {
+  text-shadow: none; }
+}
 
 .reveal blockquote {
     font-family: 'Yellowtail';
