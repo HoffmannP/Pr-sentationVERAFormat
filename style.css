@@ -5,7 +5,6 @@
   text-shadow: 1px 1px 0 white; }
 .reveal pre code  {
   text-shadow: none; }
-}
 
 .reveal blockquote {
     font-family: 'Yellowtail';
@@ -133,8 +132,11 @@ span.fa-stack {
   color: #17ff2e; }
 .reveal .slides section .blue {
   color: #1b91ff; }
-.reveal .slides section .transparent {
-  color: transparent; }
+.reveal .slides section .transparent,
+.reveal .slides section .fragment.visible .transparent,
+.reveal .slides section .transparent .fragment.visible,
+.reveal .slides section .transparent.fragment.visible {
+  opacity: 0; }
 .reveal .slides section .grey {
   color: #888; }
 .reveal .slides section .fragment.visible.light {
